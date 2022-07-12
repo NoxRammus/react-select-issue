@@ -1,0 +1,25 @@
+{
+  "name": "react-select-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:a": "cd ./a && npm run start",
+    "start:b": "cd ./b && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "a",
+    "b"
+  ],
+  "override": {
+    "a": {
+      "react": "^18.2.0"
+    },
+    "b": {
+      "react": "^16.14.0"
+    }
+  }
+}
